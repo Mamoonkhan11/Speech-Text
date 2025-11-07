@@ -1,3 +1,5 @@
+# Module for audio recording functionality in SpeakEasy AI Streamlit application.
+
 import time
 import tempfile
 import sounddevice as sd

@@ -1,3 +1,5 @@
+# File for handling file operations in SpeakEasy AI Streamlit application.
+
 import os
 import tempfile
 
@@ -16,9 +18,9 @@ def delete_file(path):
 def build_report(meta: dict, text: str):
     report = (
         "--- Speech-to-Text Transcription Report ---\n\n"
-        f"🕒 Date & Time: {meta['timestamp']}\n"
-        f"🌐 Language: {meta['language']}\n"
-        f"🎧 Input Method: {meta['method']}\n"
+        f" Date & Time: {meta['timestamp']}\n"
+        f" Language: {meta['language']}\n"
+        f" Input Method: {meta['method']}\n"
         "---------------------------------------------\n\n"
         f"{text}\n"
     )

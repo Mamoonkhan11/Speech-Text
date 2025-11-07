@@ -1,3 +1,5 @@
+# Main application file for speakEasy AI - a Streamlit app for audio transcription using Whisper model.
+
 import time
 from io import BytesIO
 from datetime import datetime

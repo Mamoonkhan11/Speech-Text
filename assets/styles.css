@@ -6,19 +6,15 @@ body { background:#0b0e14; color:#fff; font-family: "Poppins", system-ui, -apple
 .title {
   font-size: 2.4rem;
   font-weight: 800;
-  background: linear-gradient(90deg, #296f86, #166262);
+  background: linear-gradient(90deg, #194959, #061919);
 
-  /* vendor-specific for WebKit (Chrome, Safari, Edge) */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  /* standard property for broader compatibility */
   background-clip: text;
   color: transparent;
 }
 .subtitle{ color:#b3b8c3; margin:-6px 0 22px; }
-
-/* glassy cards (streamlit widgets) */
 .block-container{ padding-top:24px !important; }
 .stSelectbox, .stSlider, .stTextArea, .stFileUploader{
   background:rgba(20,25,35,.85)!important; border-radius:12px; padding:10px;
@@ -37,15 +33,15 @@ body { background:#0b0e14; color:#fff; font-family: "Poppins", system-ui, -apple
   margin:26px auto; background:radial-gradient(circle at center,#0b0e14 60%,rgba(0,191,255,.15) 100%);
 }
 .mic::after{ content:""; position:absolute; inset:0; margin:auto; width:72px; height:72px; border-radius:50%;
-  background:#00bfff; box-shadow:0 0 25px 10px #00bfff, 0 0 60px 20px #0077ff; animation:pulse 1.3s infinite;
+  background:#254955; box-shadow:0 0 25px 10px #497a8a, 0 0 60px 20px #0077ff; animation:pulse 1.3s infinite;
 }
 @keyframes pulse{ 0%{transform:scale(1);opacity:1} 50%{transform:scale(1.22);opacity:.75} 100%{transform:scale(1);opacity:1} }
 
 /* segmented control wrapper (for visual polish) */
 .segment-wrap{
-  background:rgba(20,25,35,.85); border:1px solid rgba(255,255,255,.08);
+  background:rgba(6, 7, 11, 0.85); border:1px solid rgba(40, 19, 19, 0.08);
   border-radius:12px; padding:8px 10px; max-width:420px; margin:18px auto 6px; backdrop-filter: blur(6px);
 }
 
 /* timer text */
-.timer{ text-align:center; color:#00d4ff; font-weight:600; margin-top:2px; }
+.timer{ text-align:center; color:#1c5763; font-weight:600; margin-top:2px; }

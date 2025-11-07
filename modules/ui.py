@@ -1,3 +1,5 @@
+# UI module for SpeakEasy AI Streamlit application.
+
 import streamlit as st
 
 def load_css(path: str):

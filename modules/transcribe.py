@@ -3,11 +3,11 @@ import whisper
 
 @st.cache_resource
 def load_model():
-    # choices: tiny, base, small, medium, large
+    # Load the base Whisper model and can be tiny, base based on accuracy and performance needs
     return whisper.load_model("base")
 
+# All supported languages by Whisper
 def transcribe_file(model, file_path: str, language: str):
-    # whisper expects ISO-639-1 code; simple mapping below
     lang_map = {
     "Afrikaans": "af", "Albanian": "sq", "Amharic": "am", "Arabic": "ar", "Armenian": "hy",
     "Assamese": "as", "Azerbaijani": "az", "Basque": "eu", "Belarusian": "be", "Bengali": "bn",
