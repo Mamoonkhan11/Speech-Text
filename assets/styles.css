@@ -1,0 +1,51 @@
+/* page */
+body { background:#0b0e14; color:#fff; font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+
+/* container/header */
+.main-container{ text-align:center; margin-top:34px; }
+.title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #296f86, #166262);
+
+  /* vendor-specific for WebKit (Chrome, Safari, Edge) */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* standard property for broader compatibility */
+  background-clip: text;
+  color: transparent;
+}
+.subtitle{ color:#b3b8c3; margin:-6px 0 22px; }
+
+/* glassy cards (streamlit widgets) */
+.block-container{ padding-top:24px !important; }
+.stSelectbox, .stSlider, .stTextArea, .stFileUploader{
+  background:rgba(20,25,35,.85)!important; border-radius:12px; padding:10px;
+}
+
+/* buttons */
+.stButton > button{
+  background:linear-gradient(90deg,#00bfff,#0066ff); color:#fff; border:0;
+  border-radius:10px; padding:.7em 2.2em; font-weight:600; transition:.25s;
+}
+.stButton > button:hover{ transform:scale(1.04); box-shadow:0 0 18px #00bfff; }
+
+/* mic glow */
+.mic-wrap{ display:flex; justify-content:center; }
+.mic{ position:relative; width:140px; height:140px; border-radius:50%;
+  margin:26px auto; background:radial-gradient(circle at center,#0b0e14 60%,rgba(0,191,255,.15) 100%);
+}
+.mic::after{ content:""; position:absolute; inset:0; margin:auto; width:72px; height:72px; border-radius:50%;
+  background:#00bfff; box-shadow:0 0 25px 10px #00bfff, 0 0 60px 20px #0077ff; animation:pulse 1.3s infinite;
+}
+@keyframes pulse{ 0%{transform:scale(1);opacity:1} 50%{transform:scale(1.22);opacity:.75} 100%{transform:scale(1);opacity:1} }
+
+/* segmented control wrapper (for visual polish) */
+.segment-wrap{
+  background:rgba(20,25,35,.85); border:1px solid rgba(255,255,255,.08);
+  border-radius:12px; padding:8px 10px; max-width:420px; margin:18px auto 6px; backdrop-filter: blur(6px);
+}
+
+/* timer text */
+.timer{ text-align:center; color:#00d4ff; font-weight:600; margin-top:2px; }
