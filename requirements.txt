@@ -1,6 +1,5 @@
-streamlit>=1.31        # for segmented_control
+streamlit>=1.31       
 numpy
-sounddevice
 soundfile
 openai-whisper
-torch                  # install the right CUDA/CPU wheel for your system if needed
+torch                
